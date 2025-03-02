@@ -26,19 +26,17 @@
 </head>
 <body>
     <h1>Welcome to My Page</h1>
-    <p id="output"></p>
     <button id="nameButton">Click Me!</button>
 
     <script>
-        document.write("Shaundra");
-
         const button = document.getElementById("nameButton");
 
         button.addEventListener("click", () => {
             const userName = prompt("What is your name?");
             
             if (userName) {
-                button.textContent = `Hello, $S01303821!`;
+                document.write(`Hello, ${userName}!`); 
+                button.textContent = `Hello, ${userName}!`; 
             } else {
                 button.textContent = "Click Me!";
             }

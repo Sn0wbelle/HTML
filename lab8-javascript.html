@@ -29,14 +29,14 @@
     <button id="nameButton">Click Me!</button>
 
     <script>
+      document.write("Shaundra")
         const button = document.getElementById("nameButton");
 
         button.addEventListener("click", () => {
             const userName = prompt("What is your name?");
             
-            if (userName) {
-                document.write(`Hello, ${userName}!`); 
-                button.textContent = `Hello, ${userName}!`; 
+            if (userName) {  
+                 button.textContent = `Hello, ${userName}!`; 
             } else {
                 button.textContent = "Click Me!";
             }
@@ -44,5 +44,6 @@
     </script>
 </body>
 </html>
+
 
 
